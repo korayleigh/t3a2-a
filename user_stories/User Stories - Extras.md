@@ -1,5 +1,12 @@
 # User Stories (Extra Features)
 
+## Bookings
+
+- As a customer, I want to change the number of people in my booking, so that i end up with the right sized table
+## Orders
+
+- As a customer, i want to modify a completed order, so that I can correct a mistake or change my mind.
+
 ## User Accounts for customers
 
 - As a customer, i want to login to my account when ordering, so i don't have to type in my details all the time
@@ -12,10 +19,11 @@
 ## Notifications / emails
 
 - As a customer, i want to know my bookings is confirmed, so i have something concrete to fall back on if there is a problem
+- As a customer, i want confirmation of my order after payment, so that i have a record of what i ordered.
 
 ## Live messaging / support
 
-- As a customer, i want to contact the restaurant in real time, and inform them of my problem
+- As a customer, i want to contact the restaurant in real time, and inform them of my problem.
 - As a manager, i want to be contactable by customers, so that i can resolve problems as soon as possible.
 
 ## Promotions
