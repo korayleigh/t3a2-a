@@ -16,7 +16,8 @@
 
 ## Orders
 
-- As a customer, i want to build an order of dishes, and checkout
+- As a customer, i want to build an order so i can purchase multiple dishes at once
+- As a customer, i want to checkout online so that i don't have to pay at the restaurant counter
 - As a chef, i want to see the pending orders, so i can prioritise and cook them.
 - As a manager, i want to see current orders, so i can monitor the kitchen's progress and restaurant operations.
 - As a manager, i want to edit orders, so that i can make changes for customer service or other reasons.
