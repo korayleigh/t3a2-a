@@ -8,6 +8,7 @@
 ## Functionality / Features
 
 ### Customers
+- View general information about the restaurant
 - Browse the menu of the restaurant, with images
 - View the details of a certain dish, with images
 - Filter the menu to certain categories, key ingredients, food allergy requirements etc.
@@ -50,7 +51,7 @@ Supported browsers:
 
 Rails version:
 Ruby version?
-Key dependencies: devise, devise-jwt, aws-sdk-s3, (stripe)
+Key dependencies: devise, devise-jwt, aws-sdk-s3, cors (stripe)
 Hosting: 
 
 ### Database
