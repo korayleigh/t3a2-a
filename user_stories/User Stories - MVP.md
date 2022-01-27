@@ -14,4 +14,3 @@
 - As a chef, I want to see the pending orders/dishes, so I can prioritise and cook them.
 - As a manager, I want to see pending orders/dishes, so I can monitor the kitchen's progress and restaurant operations.
 - As a manager, I want to edit orders, so that I can make changes for customer service or other reasons.
-- As a manager, I want to see summaries of orders over a period, so I can make business decisions.
