@@ -16,6 +16,7 @@
 ## Orders (Priority 2)
 
 - As a customer, I want to modify a completed order, so that I can correct a mistake or change my mind.
+- As a manager, I want to see summaries of orders over a period, so I can make business decisions.
 
 ## Payment (Priority 2)
 

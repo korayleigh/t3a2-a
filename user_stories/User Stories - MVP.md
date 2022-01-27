@@ -11,7 +11,7 @@
 
 - As a customer, I want to build an order so I can purchase multiple dishes at once
 - As a customer, I want to see the status of my order, so can know it's progress
+- As the owner and administrator of the website, I want to be able to restrict access to staff-only features (such as the orders dashboard), so that general users of the site will not be able to access these functions.
 - As a chef, I want to see the pending orders/dishes, so I can prioritise and cook them.
 - As a manager, I want to see pending orders/dishes, so I can monitor the kitchen's progress and restaurant operations.
 - As a manager, I want to edit orders, so that I can make changes for customer service or other reasons.
-- As a manager, I want to see summaries of orders over a period, so I can make business decisions.
