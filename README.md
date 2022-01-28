@@ -1,60 +1,109 @@
 # T3A2 Part A - Documentation
 
+This repository contains documentation for a web application project which is to be completed as a group as part of a course in web development  The brief for this project was to create a web application for a real business client, which solved a challenge their facing the business.  The 'real' requirement has been dropped, however, due to the difficulties presented by the COVID-19 pandemic.  Our project will create a restaurant menu and ordering web application for an imaginary restaurant.
+
+This repository contains documentation only; the source code for the [back end is here](https://github.com/korayleigh/t3a2-b-backend), and the [front end is here](https://github.com/korayleigh/t3a2-b-frontend)
 ## Purpose
-- Made for an imaginary restaurant, to replace pen and paper processes for viewing the menu and placing orders.  Customers can browse the restaurant menu on their own smart device, view the details of dishes, add them to their cart and finalise the order.
-- Lower costs for restaurant - can have less human wait staff.
-- Less chance of human errors in order processing.
+
+Our web application is designed to replace manual pen and paper processes for browsing the restaurant menu, and placing an order.  It was conceived for use by customers when seated in the restaurant, however it can also provide for take-away orders.
+
+Customers will be able to browse the restaurant menu on their own smart device while seated at their table, view the details of dishes, add them to their cart and finalise the order.  This allows the restaurant to run more efficiently, with lower reliance on human wait staff, and less chance of human errors such as communication, or mislaid orders.
+
+The web application will also replace other processes in the restaurant relating to orders, such as as notifying the kitchen of pending dishes, and the customer service and other functions performed by the manager.  The web application will provide interfaces for different types of users to enable them to see the order information most relevant to them, and interact with it according to their role.
 
 ## Functionality / Features
 
+The below features are grouped according to the anticipated roles of users of the web application, and constitute the agreed minimum viable product (MVP) of the web application.
+
 ### Customers
-- View general information about the restaurant
-- Browse the menu of the restaurant, with images
-- View the details of a certain dish, with images
-- Filter the menu to certain categories, key ingredients, food allergy requirements etc.
-- Search the menu for a text match
-- Add dishes to "cart"
-- Finalise the order to initiate cooking
-- View the order status
+
+Customers will be able to view general information about the restaurant from the landing page including the a description of the restaurant, the physical address, contact information, and view general images of the restaurant, such as street position, dining rooms,  and the team.
+
+The main feature for customers is the restaurant menu.  Customers may browse the full menu, or search and filter it for a more specific view.  Customers with specific dietary requirements will be able to filter the menu to only display dishes compatible with their needs. 
+
+To best communicate each dish to the customer images will accompany each menu item, and each item can be clicked for more detailed description and specific details, such as ingredients, spiciness, and allergy information etc.
+
+Once a suitable dish is found, customers can then add it to their order, building up a full order for their group.  Customers may be either dining in the restaurant, or making an order for pick-up, and the order process will gather this information. Once finalised, the customer will view a summary of the items on their order, and be asked to confirm their order, after which it begins processing.
+
+At this stage, payment for the order will still be handled manually, as per current process.  For dine-in orders this is at the end of the meal, and for take-away orders at time of pick-up.  However, in future versions of the application online payment is planned, as part of the finalisation of the order.
+
+After finalising the order, the customer can view an order summary and can monitor the status of the order as it is being prepared.
+
 ### Kitchen
-- View dishes from finalised orders which are waiting to be cooked
-- Update order/dish status as cooking progresses
+
+From the landing page, kitchen users will be able follow a link to a login page, so they may access the interface for the kitchen role.
+
+From this interface, they will be able to see pending dishes from finalised orders that are waiting to be cooked by the kitchen.  
+
+As those dishes are cooked the chef can update the status of the dish, which can be viewed by the customer or others.
+
+### Wait staff
+
+Wait staff are the initial customer service contact for customers in the restaurant.  After logging in, they will be able to view details of all orders, and can escalate any issues to a manager for remediation.
 
 ### Manager
-- Manage the menu of the restaurant, including adding and changing images
-- Change any aspects of orders, cancel orders
+
+The manager of a restaurant is usually tasked with ensuring a smooth operation and dealing with any customer service issues that may arise.  To enable this, the manager is given greater privileges to modify orders and their contents.
+
+After logging in, the manager can view all orders and change any detail of an order, even if it is already cooked or delivered to the customers table.  They could change the price charged for a dish, or delete it entirely from the order. This enables them to provide appropriate remediation for any customer service issues such as quality or errors on behalf of the restaurant.
+
+The manager is also able to make changes to the menu, such as adding, removing or editing menu items.  They may also hide an item from customer view if it is no longer available. 
+
+Managers will also have the ability to view the same interface as wait staff and kitchen users, enabling to monitor these aspects of the restaurant operation.
+
+### App Administrator
+
+In the day-to-day operation of the restaurant, the different roles list above have different privileges and responsibilities, according to the rules of the business.
+
+The application administrator is a special role that has the ability to create new users, and view, edit or delete existing users.  The administrator may customise which components of functionality and the user interface are available to which roles, and can assign role to users, which enables them to perform their associated business functions as detailed above.
 
 ### Future Features
-- Bookings
-- Payment gateway
-- User accounts for customers
-- Ratings and comments
-- Email notifications
-- Live messaging
-- Promotions
+
+While not included in the MVP, the following are some additional features that may be added in future versions of the application.
+
+- The ability for customers make bookings for tables at the restaurant.
+- A payment gateway at the end of the order process, removing the need for manual payment
+- User accounts for customers, so that regular customers can save user preferences, interact with customer functions faster, and benefit from loyalty promotions.
+- Enable customers to provide ratings and comments for items on the menu.
+- Email communications, for promotions, booking confirmations etc.
+- Live messaging, for customer service and other purposes, for customers in the restaurant or for queries relating to take-away orders or bookings.
+- Promotions, targeted discounts for loyal customers, and integration into the order process.
+- Business monitoring and decision-making tools, including sales summaries over various periods, and statistics such as the relative popularity of dishes.
 
 ## Target Audience
 
-- Customers of the restaurant
-- Employees/Managers of the restaurant
+The target audience for this web application is both customers and employees of the restaurant.
+
+Customers may be prospective, in that they are researching a place to dine, and may use the landing page and the menu to help them research and decide whether to choose our restaurant.
+
+Actual customers may include both those that are dining in the restaurant, or those who live locally and may choose to come to the restaurant to pick-up a take-away order.  In either case dine-in and take-away customers live locally, as they must at some point be physically present at the restaurant location.
+
+The employees of the restaurant include various users assigned different roles in the running of the business.  They include wait staff, kitchen staff, and managers, however in the current pen and paper process, the lines that delineate these roles can be somewhat fuzzy.  For example a kitchen staff member could also perform waiting duties, and a manager could perform any function.
+
 
 ## Tech Stack
 
+The following technology is used in the development, deployment and maintenance of the web application.
+
 ### Front-end
 
-React version:
-Javascript / ECMAScript version?
-Key dependencies: react-router-dom, styled-components, axios
 Supported browsers:
+JavaScript / ECMAScript version?
+React version:
+Key dependencies: react-router-dom, styled-components, axios, 
 
 ### Back-end
 
+Hosting: 
 Rails version:
 Ruby version?
 Key dependencies: devise, devise-jwt, aws-sdk-s3, cors (stripe)
-Hosting: 
 
 ### Database
 
-PostgreSQL version:
 Hosting:
+PostgreSQL version:
+
+### Development tools
+
+VS Code, 
