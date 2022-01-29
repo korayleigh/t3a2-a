@@ -3,6 +3,7 @@
 This repository contains documentation for a web application project which is to be completed as a group as part of a course in web development  The brief for this project was to create a web application for a real business client, which solved a challenge their facing the business.  The 'real' requirement has been dropped, however, due to the difficulties presented by the COVID-19 pandemic.  Our project will create a restaurant menu and ordering web application for an imaginary restaurant.
 
 This repository contains documentation only; the source code for the [back end is here](https://github.com/korayleigh/t3a2-b-backend), and the [front end is here](https://github.com/korayleigh/t3a2-b-frontend)
+
 ## Purpose
 
 Our web application is designed to replace manual pen and paper processes for browsing the restaurant menu, and placing an order.  It was conceived for use by customers when seated in the restaurant, however it can also provide for take-away orders.
@@ -67,7 +68,7 @@ While not included in the MVP, the following are some additional features that m
 - Enable customers to provide ratings and comments for items on the menu.
 - Email communications, for promotions, booking confirmations etc.
 - Live messaging, for customer service and other purposes, for customers in the restaurant or for queries relating to take-away orders or bookings.
-- Promotions, targeted discounts for loyal customers, and integration into the order process.
+- Promotions, targeted discounts for loyal customers, and integration of promotion codes etc. into the order process.
 - Business monitoring and decision-making tools, including sales summaries over various periods, and statistics such as the relative popularity of dishes.
 
 ## Target Audience
@@ -83,21 +84,30 @@ The employees of the restaurant include various users assigned different roles i
 
 ## Tech Stack
 
-The following technology is used in the development, deployment and maintenance of the web application.
+The following technology is planned for use in the development, deployment and maintenance of the web application.
 
 ### Front-end
 
 Supported browsers:
+  ---
+  ||Google Chrome|Mozilla Firefox|Apple Safari|
+  |---|---|---|---|
+  |Mobile: iOS|v1.0|v2.0|v3.0|
+  |Mobile: Android||||
+  |Desktop: macOS||||
+  |Desktop: Windows||||
+
+
 JavaScript / ECMAScript version?
 React version:
-Key dependencies: react-router-dom, styled-components, axios, 
+Key React dependencies: react-router-dom, styled-components, axios, 
 
 ### Back-end
 
-Hosting: 
-Rails version:
+Hosting: Heroku
+Rails version: 
 Ruby version?
-Key dependencies: devise, devise-jwt, aws-sdk-s3, cors (stripe)
+Key dependencies: devise, devise-jwt, aws-sdk-s3, cors (stripe?)
 
 ### Database
 
@@ -106,4 +116,68 @@ PostgreSQL version:
 
 ### Development tools
 
-VS Code, 
+VS Code, git 
+
+## Dataflow Diagram
+
+### Menu, Orders and Users
+
+Note: Payments feature is not included in MVP and is shown here for illustrative purposes only. Online payment is planned for a future version
+
+![Dataflow Diagram - Menu, Orders, Users](link)
+
+## Application Architecture Diagram
+
+![Application Architecture Diagram](link)
+
+## User Stories
+
+### Menu
+
+- As a customer, I want to browse available dishes, so I can decide what to order.
+- As a customer, I want to search the menu for a particular dish, so I can find it quickly without scrolling for ages.
+- As a customer, I want to filter the menu to dishes of a particular category/style/ingredient/hotness/food allergy, to customise the list to my needs.
+- As a manager, I want to manage the list of available dishes, so I can ensure customers are well informed.
+
+### Orders
+
+- As a customer, I want to build an order so I can purchase multiple dishes at once
+- As a customer, I want to see the status of my order, so can know it's progress
+- As a waiter, I want to see all current orders, so I may assist customers with any queries.
+- As a chef, I want to see the pending orders/dishes, so I can prioritise and cook them.
+- As a manager, I want to see pending orders/dishes, so I can monitor the kitchen's progress and restaurant operations.
+- As a manager, I want to edit orders, so that I can make changes for customer service or other reasons.
+
+### Users
+
+- As the owner and administrator of the website, I want to be able to restrict access to staff-only features (such as the orders dashboard), so that general users of the site will not be able to access these functions.
+
+## Wireframes
+
+### Mobile
+### Tablet
+### Desktop
+
+## Trello screenshots
+
+## Planning Methodology
+
+For our planning methodology, we have adopted an agile approach, with task management achieved through Kanban, implemented on the Trello platform.
+
+As we are a team of two, we are able to emphasise flexibility as a smaller team is easier to manage. The two of us are in constant communication, and continually review and revise every aspect of the project, both on a macro level (features, design, vision), and also on a micro level (implementation details).
+
+We have daily meetings that at the very least review our progress for the day, any blockers, and what we plan to do next. These meetings cover the status of each ongoing task, and usually include more general planning and discussion elements as well.
+
+Every task that comes to mind that might need doing goes into the ‘Backlog’ column of our Kanban board on Trello. At the Backlog stage, additional details surrounding due dates, team member allocation and complexity are (unless obvious) not included. This stage is simply to ensure that a given task is not neglected down the track. It is important to note that a given task may or may not actually get done - wishlist features for example also go into the Backlog column.
+
+From the Backlog column, we move any tasks that need doing as a priority to the ‘To Do’ column. It is at this stage that supplementary details are added including those mentioned above, and checklists. If a task’s complexity estimate is deemed to be ‘too large’ (this is a flexible definition depending on many factors, but usually not above a 5 or an 8) then this card is broken down into smaller tasks.
+
+Once we are working on a task, it moves to the ‘Doing’ column. Each person only has 1 task in progress at a time - in line with general Kanban principles - which aims to increase the rate of ‘flow’ (the speed with which tasks get done). We stick strictly to having 1 task in progress rule, especially because in addition to our individual tasks, we need to review the other team member’s work.
+
+However, being a small team, we are able to be a little more flexible with the specific location of a given card on the Kanban board, for example a task may remain in  the ‘Doing’ column when it needs more work in the near future. Because we are a small team in constant communication, and we discuss all ongoing tasks at least daily, the status of each item is clear to both of us.
+
+Items are moved to the ‘Code Review’ column, when they are completed by the assignee, and need to be reviewed and approved by the team member (i.e. when the pull request has been made). If significant reworks are required, another card may be added at this stage with details of the changes. For minor amendments, these are made immediately, and only then do the cards move on to the next phase.
+
+The ‘Test’ column is for code that has been written and reviewed, but needs to have testing implemented.
+
+Once reviewed (and if relevant, tested), cards are moved to the ‘Complete’ column.
