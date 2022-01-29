@@ -155,15 +155,19 @@ PostgreSQL v14.1
 
 Note: Payments feature is not included in MVP and is shown here for illustrative purposes only. Online payment is planned for a future version
 
-![Dataflow Diagram - Menu, Orders, Users](link)
+![Dataflow Diagram - Menu, Orders, Users](docs/dataflow_diagram/dataflow_diagram_menu_and_orders_and_payment_and_users.drawio.png)
+[Click here for full image](https://github.com/korayleigh/t3a2-a/blob/main/docs/dataflow_diagram/dataflow_diagram_menu_and_orders_and_payment_and_users.drawio.png)
 
 ---
 ## Application Architecture Diagram
 
-![Application Architecture Diagram](link)
+![Application Architecture Diagram](docs/application_architecture_diagram/application_architecture_diagram.drawio.png)
+[Click here for full image](https://github.com/korayleigh/t3a2-a/blob/main/docs/application_architecture_diagram/application_architecture_diagram.drawio.png)
 
 ---
 ## User Stories
+
+The following user stories describe the intended features of the web application.
 
 ### Menu
 
