@@ -94,27 +94,59 @@ The following technology is planned for use in the development, deployment and m
 #### Supported browsers:
   ||Google Chrome|Mozilla Firefox|Apple Safari|
   |---:|:---:|:---:|:---:|
-  |Version|v97.0|v96.0|v15.3|
+  |Version|97.0|96.0|15.3|
 
-**ECMAScript version:** ECMAScript 2020 (ES11)
-**React version:** 
-Key React dependencies: react-router-dom, styled-components, axios, 
+#### ECMAScript
+
+**version:** ECMAScript 2020 (ES11)
+#### React
+
+**version:** 17.0.2
+
+**Key React Dependencies**:
+|Dependency|Version|
+|---|---|
+|react-scripts|v5.0.0|
+|react-router|v6.2.1|
+|styled-components|v0.1.0|
+|axios|0.25.0|
+
+#### Hosting
+
+Netlify
 
 ### Back-end
 
-Hosting: Heroku
-Rails version: 
-Ruby version?
-Key dependencies: devise, devise-jwt, aws-sdk-s3, cors (stripe?)
+#### Hosting
+
+Heroku
+
+#### Ruby on Rails
+
+**Rails version:** 7.0.1
+**Ruby version:** 2.7.4
+
+**Key Rails Dependencies**:
+|Dependency|Version|
+|---|---|
+|devise|4.8.1|
+|devise-jwt|0.9.0|
+|aws-sdk-s3|1.111.3|
+|cors|1.0.1|
+
 
 ### Database
 
-Hosting:
-PostgreSQL version:
+#### Hosting
+Heroku
+
+#### Database type and version
+PostgreSQL v14.1
 
 ### Development tools
 
-VS Code, git 
+- VS Code v1.63
+- git v2.30
 
 ---
 ## Dataflow Diagram
