@@ -67,7 +67,7 @@ While not included in the MVP, the following are some additional features that m
 - Enable customers to provide ratings and comments for items on the menu.
 - Email communications, for promotions, booking confirmations etc.
 - Live messaging, for customer service and other purposes, for customers in the restaurant or for queries relating to take-away orders or bookings.
-- Promotions, targeted discounts for loyal customers, and integration into the order process.
+- Promotions, targeted discounts for loyal customers, and integration of promotion codes etc. into the order process.
 - Business monitoring and decision-making tools, including sales summaries over various periods, and statistics such as the relative popularity of dishes.
 
 ## Target Audience
@@ -83,21 +83,30 @@ The employees of the restaurant include various users assigned different roles i
 
 ## Tech Stack
 
-The following technology is used in the development, deployment and maintenance of the web application.
+The following technology is planned for use in the development, deployment and maintenance of the web application.
 
 ### Front-end
 
 Supported browsers:
+  ---
+  ||Google Chrome|Mozilla Firefox|Apple Safari|
+  |---|---|---|---|
+  |Mobile: iOS|v1.0|v2.0|v3.0|
+  |Mobile: Android||||
+  |Desktop: macOS||||
+  |Desktop: Windows||||
+
+
 JavaScript / ECMAScript version?
 React version:
-Key dependencies: react-router-dom, styled-components, axios, 
+Key React dependencies: react-router-dom, styled-components, axios, 
 
 ### Back-end
 
-Hosting: 
-Rails version:
+Hosting: Heroku
+Rails version: 
 Ruby version?
-Key dependencies: devise, devise-jwt, aws-sdk-s3, cors (stripe)
+Key dependencies: devise, devise-jwt, aws-sdk-s3, cors (stripe?)
 
 ### Database
 
@@ -106,4 +115,47 @@ PostgreSQL version:
 
 ### Development tools
 
-VS Code, 
+VS Code, git 
+
+## Dataflow Diagram
+
+### Menu, Orders and Users
+
+Note: Payments feature is not included in MVP and is shown here for illustrative purposes only. Online payment is planned for a future version
+
+![Dataflow Diagram - Menu, Orders, Users](link)
+
+## Application Architecture Diagram
+
+![Application Architecture Diagram](link)
+
+## User Stories
+
+### Menu
+
+- As a customer, I want to browse available dishes, so I can decide what to order.
+- As a customer, I want to search the menu for a particular dish, so I can find it quickly without scrolling for ages.
+- As a customer, I want to filter the menu to dishes of a particular category/style/ingredient/hotness/food allergy, to customise the list to my needs.
+- As a manager, I want to manage the list of available dishes, so I can ensure customers are well informed.
+
+### Orders
+
+- As a customer, I want to build an order so I can purchase multiple dishes at once
+- As a customer, I want to see the status of my order, so can know it's progress
+- As a waiter, I want to see all current orders, so I may assist customers with any queries.
+- As a chef, I want to see the pending orders/dishes, so I can prioritise and cook them.
+- As a manager, I want to see pending orders/dishes, so I can monitor the kitchen's progress and restaurant operations.
+- As a manager, I want to edit orders, so that I can make changes for customer service or other reasons.
+
+### Users
+
+- As the owner and administrator of the website, I want to be able to restrict access to staff-only features (such as the orders dashboard), so that general users of the site will not be able to access these functions.
+
+## Wireframes
+
+### Mobile
+### Tablet
+### Desktop
+
+## Trello screenshots
+
