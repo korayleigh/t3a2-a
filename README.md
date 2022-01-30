@@ -155,7 +155,7 @@ The front-end portion of this web application will be implemented using React.
 
 #### React
 
-**React version:** 17.0.2
+- **React version:** 17.0.2
 
 ##### Key React Dependencies
 
@@ -185,8 +185,8 @@ The back end web application framework that will be implemented is Ruby on Rails
 
 #### Ruby on Rails
 
-**Rails version:** 6.1.4.4
-**Ruby version:** 2.7.4
+- **Rails version:** 6.1.4.4
+- **Ruby version:** 2.7.4
 
 ##### Key Rails Dependencies
 |Dependency|Version|
