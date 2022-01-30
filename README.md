@@ -1,8 +1,52 @@
 # T3A2 Part A - Documentation
 
-This repository contains documentation for a web application project which is to be completed as a group as part of a course in web development  The brief for this project was to create a web application for a real business client, which solved a challenge their facing the business.  The 'real' requirement has been dropped, however, due to the difficulties presented by the COVID-19 pandemic.  Our project will create a restaurant menu and ordering web application for an imaginary restaurant.
+This repository contains documentation for a web application project which is to be completed as a group as part of a course in web development.  The brief for this project was to create a web application for a real business client, which solved a challenge their facing the business.  The 'real' requirement has been dropped, however, due to the difficulties presented by the COVID-19 pandemic.  Our project will create a restaurant menu and ordering web application for an imaginary restaurant.
 
 This repository contains documentation only; the source code for the [back end is here](https://github.com/korayleigh/t3a2-b-backend), and the [front end is here](https://github.com/korayleigh/t3a2-b-frontend)
+
+---
+
+- [T3A2 Part A - Documentation](#t3a2-part-a---documentation)
+  - [Purpose](#purpose)
+  - [Functionality / Features](#functionality--features)
+    - [Customers](#customers)
+    - [Kitchen](#kitchen)
+    - [Wait staff](#wait-staff)
+    - [Manager](#manager)
+    - [App Administrator](#app-administrator)
+    - [Future Features](#future-features)
+  - [Target Audience](#target-audience)
+  - [Tech Stack](#tech-stack)
+    - [Front-end](#front-end)
+      - [React](#react)
+        - [Key React Dependencies](#key-react-dependencies)
+      - [Supported browsers](#supported-browsers)
+      - [ECMAScript](#ecmascript)
+      - [Hosting](#hosting)
+    - [Back-end](#back-end)
+      - [Ruby on Rails](#ruby-on-rails)
+        - [Key Rails Dependencies](#key-rails-dependencies)
+      - [Hosting](#hosting-1)
+    - [Database](#database)
+      - [Database type and version](#database-type-and-version)
+      - [Hosting](#hosting-2)
+    - [Development tools](#development-tools)
+  - [Dataflow Diagram](#dataflow-diagram)
+    - [Menu, Orders and Users](#menu-orders-and-users)
+  - [Application Architecture Diagram](#application-architecture-diagram)
+  - [User Stories](#user-stories)
+    - [Menu](#menu)
+    - [Orders](#orders)
+    - [Users](#users)
+  - [Wireframes](#wireframes)
+    - [Mobile](#mobile)
+    - [Tablet](#tablet)
+    - [Desktop](#desktop)
+  - [Planning Methodology](#planning-methodology)
+  - [Source Control Methodology](#source-control-methodology)
+    - [Trello screenshots](#trello-screenshots)
+      - [All screenshots](#all-screenshots)
+
 
 ---
 ## Purpose
@@ -24,7 +68,7 @@ Customers will be able to view general information about the restaurant from the
 
 The main feature for customers is the restaurant menu.  Customers may browse the full menu, or search and filter it for a more specific view.  Customers with specific dietary requirements will be able to filter the menu to only display dishes compatible with their needs. 
 
-To best communicate each dish to the customer images will accompany each menu item, and each item can be clicked for more detailed description and specific details, such as ingredients, spiciness, and allergy information etc.
+To best communicate each dish to the customer, images will accompany each menu item, and each item can be clicked for more detailed description and specific details, such as ingredients, spiciness, and allergy information etc.
 
 Once a suitable dish is found, customers can then add it to their order, building up a full order for their group.  Customers may be either dining in the restaurant, or making an order for pick-up, and the order process will gather this information. Once finalised, the customer will view a summary of the items on their order, and be asked to confirm their order, after which it begins processing.
 
@@ -42,7 +86,7 @@ As those dishes are cooked the chef can update the status of the dish, which can
 
 ### Wait staff
 
-Wait staff are the initial customer service contact for customers in the restaurant.  After logging in, they will be able to view details of all orders, and can escalate any issues to a manager for remediation.
+Wait staff are the initial customer service contact for customers in the restaurant.  After logging in, they will be able to view details of all orders, so that they may discuss the order with the relevant customer.  In case of customer service issues beyond requiring remediation, wait staff may contact a manager.
 
 ### Manager
 
@@ -64,9 +108,9 @@ The application administrator is a special role that has the ability to create n
 
 While not included in the MVP, the following are some additional features that may be added in future versions of the application.
 
-- The ability for customers make bookings for tables at the restaurant.
-- A payment gateway at the end of the order process, removing the need for manual payment
-- User accounts for customers, so that regular customers can save user preferences, interact with customer functions faster, and benefit from loyalty promotions.
+- The ability for customers to make bookings for tables at the restaurant.
+- A payment gateway at the end of the order process, removing the need for manual payment.
+- User accounts for customers, so that regular customers can login to their account to save user preferences, interact with customer functions faster, and benefit from loyalty promotions.
 - Enable customers to provide ratings and comments for items on the menu.
 - Email communications, for promotions, booking confirmations etc.
 - Live messaging, for customer service and other purposes, for customers in the restaurant or for queries relating to take-away orders or bookings.
@@ -81,9 +125,9 @@ The target audience for this web application is both customers and employees of 
 
 Customers may be prospective, in that they are researching a place to dine, and may use the landing page and the menu to help them research and decide whether to choose our restaurant.
 
-Actual customers may include both those that are dining in the restaurant, or those who live locally and may choose to come to the restaurant to pick-up a take-away order.  In either case dine-in and take-away customers live locally, as they must at some point be physically present at the restaurant location.
+Actual customers may include both those that are dining in the restaurant, or those who may choose to come to the restaurant to pick-up a take-away order.  In either case dine-in and take-away customers live locally, as they must at some point be physically present at the restaurant location.
 
-The employees of the restaurant include various users assigned different roles in the running of the business.  They include wait staff, kitchen staff, and managers, however in the current pen and paper process, the lines that delineate these roles can be somewhat fuzzy.  For example a kitchen staff member could also perform waiting duties, and a manager could perform any function.
+The employees of the restaurant are assigned different roles in the running of the business.  They include wait staff, kitchen staff, and managers, however in the current pen and paper process, the lines that delineate these roles can be somewhat fuzzy.  For example a kitchen staff member could also perform waiting duties, and a manager could perform any function.
 
 ---
 
@@ -93,21 +137,14 @@ The following technology is planned for use in the development, deployment and m
 
 ### Front-end
 
-#### Supported browsers:
-
-  ||Google Chrome|Mozilla Firefox|Apple Safari|
-  |---:|:---:|:---:|:---:|
-  |Version|97.0|96.0|15.3|
-
-#### ECMAScript
-
-**version:** ECMAScript 2020 (ES11)
+The front-end portion of this web application will be implemented using React.
 
 #### React
 
-**version:** 17.0.2
+**React version:** 17.0.2
 
-**Key React Dependencies**:
+##### Key React Dependencies
+
 |Dependency|Version|
 |---|---|
 |react-scripts|v5.0.0|
@@ -115,22 +152,29 @@ The following technology is planned for use in the development, deployment and m
 |styled-components|v0.1.0|
 |axios|0.25.0|
 
+#### Supported browsers
+
+  ||Google Chrome|Mozilla Firefox|Apple Safari|
+  |---:|:---:|:---:|:---:|
+  |Version|97.0|96.0|15.3|
+
+#### ECMAScript
+
+**ECMAScript version:** ECMAScript 2020 (ES11)
 #### Hosting
 
-Netlify
+Netlify will be used to host the front-end content of this web application
 
 ### Back-end
 
-#### Hosting
-
-Heroku
+The back end web application framework that will be implemented is Ruby on Rails.
 
 #### Ruby on Rails
 
-**Rails version:** 7.0.1
+**Rails version:** 6.1.4.4
 **Ruby version:** 2.7.4
 
-**Key Rails Dependencies**:
+##### Key Rails Dependencies
 |Dependency|Version|
 |---|---|
 |devise|4.8.1|
@@ -139,21 +183,31 @@ Heroku
 |cors|1.0.1|
 
 
+#### Hosting
+
+The back-end web application framework content will be hosted on Heroku.
 ### Database
 
-#### Hosting
-Heroku
-
+A relational database will store the data for this web application.
 #### Database type and version
 PostgreSQL v14.1
 
+
+#### Hosting
+
+The PostgreSQL database will be hosted on Heroku.
+
 ### Development tools
+
+The following tools are used in the development and maintenance of this application
 
 - VS Code v1.63
 - git v2.30
 
 ---
 ## Dataflow Diagram
+
+The following diagram represents the entities and data stores involved in this web application, and the data that will flow between them.
 
 ### Menu, Orders and Users
 
@@ -165,33 +219,36 @@ Note: Payments feature is not included in MVP and is shown here for illustrative
 ---
 ## Application Architecture Diagram
 
+The following diagram represents a high level structure of the web application showing major components.
+
 ![Application Architecture Diagram](docs/application_architecture_diagram/application_architecture_diagram.drawio.png)
 [Click here for full image](https://github.com/korayleigh/t3a2-a/blob/main/docs/application_architecture_diagram/application_architecture_diagram.drawio.png)
 
 ---
 ## User Stories
 
-The following user stories describe the intended features of the web application.
+The following user stories describe the intended features of the web application from the point of the intended users.  They are grouped under headings of broader functionality.
 
 ### Menu
 
 - As a customer, I want to browse available dishes, so I can decide what to order.
 - As a customer, I want to search the menu for a particular dish, so I can find it quickly without scrolling for ages.
-- As a customer, I want to filter the menu to dishes of a particular category/style/ingredient/hotness/food allergy, to customise the list to my needs.
-- As a manager, I want to manage the list of available dishes, so I can ensure customers are well informed.
+- As a customer, I want to filter the menu to dishes of a particular category, ingredient, spiciness, or food allergy, to customise the list to my needs.
+- As a manager, I want to manage the list of available menu items, so I can ensure customers are well informed.
+- As a manager, I want to add images to menu items, so that the customer can better visualise them.
 
 ### Orders
 
 - As a customer, I want to build an order so I can purchase multiple dishes at once
 - As a customer, I want to see the status of my order, so can know it's progress
 - As a waiter, I want to see all current orders, so I may assist customers with any queries.
-- As a chef, I want to see the pending orders/dishes, so I can prioritise and cook them.
-- As a manager, I want to see pending orders/dishes, so I can monitor the kitchen's progress and restaurant operations.
-- As a manager, I want to edit orders, so that I can make changes for customer service or other reasons.
+- As a chef, I want to see information about pending orders and dishes, so I can prioritise and cook them.
+- As a manager, I want to see information about pending orders dishes, so I can monitor the kitchen's progress and restaurant operations.
+- As a manager, I want to edit details of orders, so that I can make changes for customer service or other reasons.
 
 ### Users
 
-- As the owner and administrator of the website, I want to be able to restrict access to staff-only features (such as the orders dashboard), so that general users of the site will not be able to access these functions.
+- As the owner and administrator of the website, I want to be able to restrict access to staff-only features (such as the orders dashboard), so that general users of the site (such as customers) will not be able to access these functions.
 
 ---
 
@@ -224,7 +281,7 @@ We have daily meetings that at the very least review our progress for the day, a
 
 Every task that comes to mind that might need doing goes into the ‘Backlog’ column of our Kanban board on Trello. At the Backlog stage, additional details surrounding due dates, team member allocation and complexity are (unless obvious) not included. This stage is simply to ensure that a given task is not neglected down the track. It is important to note that a given task may or may not actually get done - wishlist features for example also go into the Backlog column.
 
-From the Backlog column, we move any tasks that need doing as a priority to the ‘To Do’ column. It is at this stage that supplementary details are added including those mentioned above, and checklists. The task's complexity is assigned to be one of the fibonacci numbers to facilitate easier estimation (frequently used in Agile - see <https://www.lucidchart.com/blog/fibonacci-scale-for-agile-estimation> for more detail). If a task’s complexity estimate is deemed to be ‘too large’ (this is a flexible definition depending on many factors, but usually not above a 5 or an 8) then this card is broken down into smaller tasks.
+From the Backlog column, we move any tasks that need doing as a priority to the ‘To Do’ column. It is at this stage that supplementary details are added including those mentioned above, and checklists. The task's complexity is assigned to be one of the Fibonacci numbers to facilitate easier estimation (frequently used in Agile - see <https://www.lucidchart.com/blog/fibonacci-scale-for-agile-estimation> for more detail). If a task’s complexity estimate is deemed to be ‘too large’ (this is a flexible definition depending on many factors, but usually not above a 5 or an 8) then this card is broken down into smaller tasks.
 
 Once we are working on a task, it moves to the ‘Doing’ column. Each person only has 1-2 tasks in progress at a time - in line with general Kanban principles - which aims to increase the rate of ‘flow’ (the speed with which tasks get done). Having a set task limit helps because in addition to our individual tasks, we need to review the other team member’s work.
 
@@ -242,7 +299,9 @@ We have decided to use branching rather than forking to manage our repositories 
 
 We also are required by the assignment specifications to keep branch history intact (i.e. we cannot delete branches). Therefore, we have decided to make a new branch for each edit (even if it is related to the same task/feature), e.g. wireframes/edit_1, wireframes/edit_2 etc. so as to avoid merge conflicts.
 
+**REMOVE?**
 We have considered a rebasing solution in order to mitigate the number of branches, however as at the time of writing we have not yet managed to find a working solution that solves both of these problems.
+**REMOVE?**
 
 Our end to end process therefore, is as follows:
 
@@ -254,34 +313,56 @@ Our end to end process therefore, is as follows:
 
 ### Trello screenshots
 
-#### 23rd January 2022
+Please note that due to a script blocking browser add-on, some of the screenshots below do not contain estimations.  However, estimations have been part of our planning methodology from the beginning.
+
+#### 22nd January 2022<!-- omit in toc --> 
+
+![Trello screenshot - 22nd January 2022]()
+#### 23rd January 2022<!-- omit in toc --> 
 
 ![Trello screenshot - 23rd January 2022]()
 
-#### 24th January 2022
+#### 24th January 2022<!-- omit in toc --> 
 
-![Trello screenshot - 23rd January 2022]()
+![Trello screenshot - 24th January 2022]()
 
-#### 25th January 2022
+#### 25th January 2022<!-- omit in toc --> 
 
-![Trello screenshot - 23rd January 2022]()
+![Trello screenshot - 25th January 2022]()
 
-#### 26th January 2022
+#### 26th January 2022<!-- omit in toc --> 
 
-![Trello screenshot - 23rd January 2022]()
+![Trello screenshot - 26th January 2022]()
 
-#### 27th January 2022
+#### 27th January 2022<!-- omit in toc --> 
 
-![Trello screenshot - 23rd January 2022]()
+![Trello screenshot - 27th January 2022]()
 
-#### 28th January 2022
+#### 28th January 2022<!-- omit in toc --> 
 
-![Trello screenshot - 23rd January 2022]()
+![Trello screenshot - 28th January 2022]()
 
-#### 29th January 2022
+#### 29th January 2022<!-- omit in toc --> 
 
-![Trello screenshot - 23rd January 2022]()
+![Trello screenshot - 29th January 2022]()
 
-#### 30th January 2022
+#### 30th January 2022<!-- omit in toc --> 
 
-![Trello screenshot - 23rd January 2022]()
+![Trello screenshot - 30th January 2022]()
+
+
+#### All screenshots
+
+![](docs/trello_screenshots/Screenshot%202022-01-22%20at%2012-08-38%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-22%20at%2013-22-33%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-22%20at%2013-30-52%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-24%20at%2018-38-16%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-24%20at%2021-49-17%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-24%20at%2022-43-45%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-26%20at%2014-42-43%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-26%20at%2020-52-03%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-27%20at%2023-31-41%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-28%20at%2015-22-00%20Full%20Stack%20App%20Trello_substitute%20for%202022-01-27%20evening%20(missing).png)
+![](docs/trello_screenshots/Screenshot%202022-01-29%20at%2010-07-34%20Full%20Stack%20App%20Trello%20substitute%20for%202022-01-28%20evening%20(missing).png)
+![](docs/trello_screenshots/Screenshot%202022-01-29%20at%2015-56-33%20Full%20Stack%20App%20Trello.png)
+![](docs/trello_screenshots/Screenshot%202022-01-30%20at%2010-52-44%20Full%20Stack%20App%20Trello%20substitue%20for%202022-01-29%20evening%20(missing).png)
