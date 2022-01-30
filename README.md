@@ -243,6 +243,8 @@ The following diagram represents a high level structure of the web application s
 
 The following user stories describe the intended features of the web application from the point of the intended users.  They are grouped under headings of broader functionality.
 
+Please note, the user stories below are the final versions. Please see the various git branches (user_stories and others) and commits for evidence of revision and refinement.
+
 ### Menu
 
 - As a customer, I want to browse available dishes, so I can decide what to order.
