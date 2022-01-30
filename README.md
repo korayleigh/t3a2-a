@@ -354,7 +354,7 @@ Our end to end process therefore, is as follows:
 
 ### Trello screenshots
 
-Please note that due to a script blocking browser add-on, some of the screenshots below do not contain estimations.  However, estimations have been part of our planning methodology from the beginning.
+Below are daily screenshots from our Trello board.
 
 #### 22nd January 2022<!-- omit in toc -->
 
