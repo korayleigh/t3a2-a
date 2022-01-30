@@ -43,9 +43,8 @@ This repository contains documentation only; the source code for the [back end i
     - [Tablet](#tablet)
     - [Desktop](#desktop)
   - [Planning Methodology](#planning-methodology)
-  - [Source Control Methodology](#source-control-methodology)
+    - [Source Control Methodology](#source-control-methodology)
     - [Trello screenshots](#trello-screenshots)
-      - [All screenshots](#all-screenshots)
 
 
 ---
@@ -53,7 +52,7 @@ This repository contains documentation only; the source code for the [back end i
 
 Our web application is designed to replace manual pen and paper processes for browsing the restaurant menu, and placing an order.  It was conceived for use by customers when seated in the restaurant, however it can also provide for take-away orders.
 
-Customers will be able to browse the restaurant menu on their own smart device while seated at their table, view the details of dishes, add them to their cart and finalise the order.  This allows the restaurant to run more efficiently, with lower reliance on human wait staff, and less chance of human errors such as communication, or mislaid orders.
+Customers will be able to browse the restaurant menu on their own smart device while seated at their table, view the details and images of dishes, add them to their cart and finalise the order.  This allows the restaurant to run more efficiently, with lower reliance on human wait staff, and less chance of human errors such as communication, or mislaid orders. In addition, from the customer's perspective it facilitates a smoother, more convenient ordering process.
 
 The web application will also replace other processes in the restaurant relating to orders, such as as notifying the kitchen of pending dishes, and the customer service and other functions performed by the manager.  The web application will provide interfaces for different types of users to enable them to see the order information most relevant to them, and interact with it according to their role.
 
@@ -266,8 +265,54 @@ To view pdfs directly in VSCode you can use the following extension:
 [tomoki1207.pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
 ### Mobile
+
+<img src="./docs/wireframes/PNGs/mobile/HOME.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/SIDEBAR%20MENU.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/MENU%20_%20ORDER.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/FOOD%20ITEM.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/CHECKOUT.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/CONFIRMATION.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/FIND%20ORDER.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/STAFF%20LOGIN.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/ADMIN%20ORDERS%20DASHBOARD.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/ADMIN%20VIEW%20ORDER.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/ADMIN%20EDIT%20MENU.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/ADMIN%20EDIT%20ITEM.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/ADMIN%20EDIT%20ITEM%20PHOTO.png" alt="drawing" width="200"/>
+<img src="./docs/wireframes/PNGs/mobile/ADMIN%20SIDEBAR%20MENU.png" alt="drawing" width="200"/>
+
 ### Tablet
+
+<img src="./docs/wireframes/PNGs/tablet/HOME.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/SIDEBAR%20MENU.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/MENU%20_%20ORDER.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/FOOD%20ITEM.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/CHECKOUT.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/CONFIRMATION.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/FIND%20ORDER.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/STAFF%20LOGIN.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/ADMIN%20ORDERS%20DASHBOARD.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/ADMIN%20VIEW%20ORDER.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/ADMIN%20EDIT%20MENU.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/ADMIN%20EDIT%20ITEM.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/ADMIN%20EDIT%20ITEM%20PHOTO.png" alt="drawing" width="300"/>
+<img src="./docs/wireframes/PNGs/tablet/ADMIN%20SIDEBAR%20MENU.png" alt="drawing" width="300"/>
+
 ### Desktop
+
+<img src="./docs/wireframes/PNGs/desktop/HOME.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/MENU%20_%20ORDER.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/FOOD%20ITEM.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/MENU%20_%20ORDER%20with%20Cart%20open.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/CHECKOUT.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/CONFIRMATION.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/FIND%20ORDER.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/STAFF%20LOGIN.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/ADMIN%20ORDERS%20DASHBOARD.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/ADMIN%20VIEW%20ORDER.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/ADMIN%20EDIT%20MENU.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/ADMIN%20EDIT%20ITEM.png" alt="drawing" width="500"/>
+<img src="./docs/wireframes/PNGs/desktop/ADMIN%20EDIT%20ITEM%20PHOTO.png" alt="drawing" width="500"/>
 
 ---
 
@@ -293,15 +338,11 @@ The ‘Test’ column is for code that has been written and reviewed, but needs 
 
 Once reviewed (and if relevant, tested), cards are moved to the ‘Complete’ column.
 
-## Source Control Methodology
+### Source Control Methodology
 
 We have decided to use branching rather than forking to manage our repositories collaboratively. We considered using forking, however this was discounted as for a team of two working closely, and in constant communication it was deemed to not provide any additional features that are useful to us in this context. The main benefit of forking as we see it is that the main repository has a single person/administrator having final say / control over what code is included/merged in. For us this is clearly unnecessary as the people contributing to the project is necessarily limited to just us 2, and so we do not need to further control who can submit PRs and merge. In addition, forking would mean managing 2 copies of each repository which is more work, and would require branches to develop features anyway, so also does not save time in any aspect either.
 
 We also are required by the assignment specifications to keep branch history intact (i.e. we cannot delete branches). Therefore, we have decided to make a new branch for each edit (even if it is related to the same task/feature), e.g. wireframes/edit_1, wireframes/edit_2 etc. so as to avoid merge conflicts.
-
-**REMOVE?**
-We have considered a rebasing solution in order to mitigate the number of branches, however as at the time of writing we have not yet managed to find a working solution that solves both of these problems.
-**REMOVE?**
 
 Our end to end process therefore, is as follows:
 
@@ -315,54 +356,38 @@ Our end to end process therefore, is as follows:
 
 Please note that due to a script blocking browser add-on, some of the screenshots below do not contain estimations.  However, estimations have been part of our planning methodology from the beginning.
 
-#### 22nd January 2022<!-- omit in toc --> 
+#### 22nd January 2022<!-- omit in toc -->
 
-![Trello screenshot - 22nd January 2022]()
-#### 23rd January 2022<!-- omit in toc --> 
+![Trello screenshot - 22nd January 2022](docs/trello_screenshots/Screenshot%202022-01-22%20at%2012-08-38%20Full%20Stack%20App%20Trello.png)
 
-![Trello screenshot - 23rd January 2022]()
+#### 23rd January 2022<!-- omit in toc -->
 
-#### 24th January 2022<!-- omit in toc --> 
+![Trello screenshot - 23rd January 2022](docs/trello_screenshots/Screenshot%202022-01-23%20at%2013-30-52%20Full%20Stack%20App%20Trello.png)
 
-![Trello screenshot - 24th January 2022]()
+#### 24th January 2022<!-- omit in toc -->
 
-#### 25th January 2022<!-- omit in toc --> 
+![Trello screenshot - 24th January 2022](docs/trello_screenshots/Screenshot%202022-01-24%20at%2018-38-16%20Full%20Stack%20App%20Trello.png)
 
-![Trello screenshot - 25th January 2022]()
+#### 25th January 2022<!-- omit in toc -->
 
-#### 26th January 2022<!-- omit in toc --> 
+![Trello screenshot - 25th January 2022](docs/trello_screenshots/Screenshot%202022-01-25%20at%2022-43-45%20Full%20Stack%20App%20Trello.png)
 
-![Trello screenshot - 26th January 2022]()
+#### 26th January 2022<!-- omit in toc -->
 
-#### 27th January 2022<!-- omit in toc --> 
+![Trello screenshot - 26th January 2022](docs/trello_screenshots/Screenshot%202022-01-26%20at%2020-52-03%20Full%20Stack%20App%20Trello.png)
 
-![Trello screenshot - 27th January 2022]()
+#### 27th January 2022<!-- omit in toc -->
 
-#### 28th January 2022<!-- omit in toc --> 
+![Trello screenshot - 27th January 2022](docs/trello_screenshots/Screenshot%202022-01-28%20at%2015-22-00%20Full%20Stack%20App%20Trello_substitute%20for%202022-01-27%20evening%20(missing).png)
 
-![Trello screenshot - 28th January 2022]()
+#### 28th January 2022<!-- omit in toc -->
 
-#### 29th January 2022<!-- omit in toc --> 
+![Trello screenshot - 28th January 2022](docs/trello_screenshots/Screenshot%202022-01-29%20at%2010-07-34%20Full%20Stack%20App%20Trello%20substitute%20for%202022-01-28%20evening%20(missing).png)
 
-![Trello screenshot - 29th January 2022]()
+#### 29th January 2022<!-- omit in toc -->
 
-#### 30th January 2022<!-- omit in toc --> 
+![Trello screenshot - 29th January 2022](docs/trello_screenshots/Screenshot%202022-01-30%20at%2010-52-44%20Full%20Stack%20App%20Trello%20substitue%20for%202022-01-29%20evening%20(missing).png)
+
+#### 30th January 2022<!-- omit in toc -->
 
 ![Trello screenshot - 30th January 2022]()
-
-
-#### All screenshots
-
-![](docs/trello_screenshots/Screenshot%202022-01-22%20at%2012-08-38%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-22%20at%2013-22-33%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-22%20at%2013-30-52%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-24%20at%2018-38-16%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-24%20at%2021-49-17%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-24%20at%2022-43-45%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-26%20at%2014-42-43%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-26%20at%2020-52-03%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-27%20at%2023-31-41%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-28%20at%2015-22-00%20Full%20Stack%20App%20Trello_substitute%20for%202022-01-27%20evening%20(missing).png)
-![](docs/trello_screenshots/Screenshot%202022-01-29%20at%2010-07-34%20Full%20Stack%20App%20Trello%20substitute%20for%202022-01-28%20evening%20(missing).png)
-![](docs/trello_screenshots/Screenshot%202022-01-29%20at%2015-56-33%20Full%20Stack%20App%20Trello.png)
-![](docs/trello_screenshots/Screenshot%202022-01-30%20at%2010-52-44%20Full%20Stack%20App%20Trello%20substitue%20for%202022-01-29%20evening%20(missing).png)
