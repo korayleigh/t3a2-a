@@ -8,11 +8,11 @@
 ## 2 User Stories
 - User stories have been slightly revised by both after discussion.  Addition of admin user story for management of users and waiter user story to support and match the dataflow diagram.
 
-## 2. Next Steps
+## 3. Next Steps
 
 - Koray will update planning methodology to include extra user stories, source code management, links to minutes of meetings, and mention Fibonacci estimation method.
 - Leigh will begin to design an Entity Relationship Diagram in preparation for Part B
 - In preparation for Part B, Leigh will ensure he is using the same ruby version as Koray (2.7.4) and the same rails version (6.1.4.4)
 
-## 3. Blockers
+## 4. Blockers
 - None
