@@ -7,6 +7,8 @@ This repository contains documentation only; the source code for the [back end i
 ---
 
 - [T3A2 Part A - Documentation](#t3a2-part-a---documentation)
+  - [Trello Board Link](#trello-board-link)
+  - [Github Repository Link](#github-repository-link)
   - [Purpose](#purpose)
   - [Functionality / Features](#functionality--features)
     - [Customers](#customers)
@@ -45,9 +47,22 @@ This repository contains documentation only; the source code for the [back end i
   - [Planning Methodology](#planning-methodology)
     - [Source Control Methodology](#source-control-methodology)
     - [Trello screenshots](#trello-screenshots)
-
+    - [Daily Standup Meeting Minutes](#daily-standup-meeting-minutes)
 
 ---
+
+## Trello Board Link
+
+[Trello Board](https://trello.com/b/CoWRRx5z/full-stack-app)
+
+---
+
+## Github Repository Link
+
+[Github Repo](https://github.com/korayleigh/t3a2-a)
+
+---
+
 ## Purpose
 
 Our web application is designed to replace manual pen and paper processes for browsing the restaurant menu, and placing an order.  It was conceived for use by customers when seated in the restaurant, however it can also provide for take-away orders.
@@ -57,6 +72,7 @@ Customers will be able to browse the restaurant menu on their own smart device w
 The web application will also replace other processes in the restaurant relating to orders, such as as notifying the kitchen of pending dishes, and the customer service and other functions performed by the manager.  The web application will provide interfaces for different types of users to enable them to see the order information most relevant to them, and interact with it according to their role.
 
 ---
+
 ## Functionality / Features
 
 The below features are grouped according to the anticipated roles of users of the web application, and constitute the agreed minimum viable product (MVP) of the web application.
@@ -391,3 +407,14 @@ Please note that due to a script blocking browser add-on, some of the screenshot
 #### 30th January 2022<!-- omit in toc -->
 
 ![Trello screenshot - 30th January 2022]()
+
+--
+
+### Daily Standup Meeting Minutes
+
+- [Meeting Minutes - 24/1/22](./docs/meeting_minutes/Meeting%2001%20-%2024%20Jan%2022.md)
+- [Meeting Minutes - 25/1/22](./docs/meeting_minutes/Meeting%2002%20-%2025%20Jan%2022.md)
+- [Meeting Minutes - 26/1/22](./docs/meeting_minutes/Meeting%2003%20-%2026%20Jan%2022.md)
+- [Meeting Minutes - 27/1/22](./docs/meeting_minutes/Meeting%2004%20-%2027%20Jan%2022.md)
+- [Meeting Minutes - 28/1/22](./docs/meeting_minutes/Meeting%2005%20-%2028%20Jan%2022.md)
+- [Meeting Minutes - 29/1/22](./docs/meeting_minutes/Meeting%2006%20-%2029%20Jan%2022.md)
