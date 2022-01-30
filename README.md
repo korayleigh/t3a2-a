@@ -74,6 +74,7 @@ While not included in the MVP, the following are some additional features that m
 - Business monitoring and decision-making tools, including sales summaries over various periods, and statistics such as the relative popularity of dishes.
 
 ---
+
 ## Target Audience
 
 The target audience for this web application is both customers and employees of the restaurant.
@@ -85,6 +86,7 @@ Actual customers may include both those that are dining in the restaurant, or th
 The employees of the restaurant include various users assigned different roles in the running of the business.  They include wait staff, kitchen staff, and managers, however in the current pen and paper process, the lines that delineate these roles can be somewhat fuzzy.  For example a kitchen staff member could also perform waiting duties, and a manager could perform any function.
 
 ---
+
 ## Tech Stack
 
 The following technology is planned for use in the development, deployment and maintenance of the web application.
@@ -92,6 +94,7 @@ The following technology is planned for use in the development, deployment and m
 ### Front-end
 
 #### Supported browsers:
+
   ||Google Chrome|Mozilla Firefox|Apple Safari|
   |---:|:---:|:---:|:---:|
   |Version|97.0|96.0|15.3|
@@ -99,6 +102,7 @@ The following technology is planned for use in the development, deployment and m
 #### ECMAScript
 
 **version:** ECMAScript 2020 (ES11)
+
 #### React
 
 **version:** 17.0.2
@@ -190,7 +194,19 @@ The following user stories describe the intended features of the web application
 - As the owner and administrator of the website, I want to be able to restrict access to staff-only features (such as the orders dashboard), so that general users of the site will not be able to access these functions.
 
 ---
+
 ## Wireframes
+
+The pdf version of our wireframes are interactive, with clickable links to navigate the app wireframes like a prototype.
+
+Therefore, for the best experience, please refer to the pdf wireframes documents:
+
+- [t3a2-a/docs/wireframes/mobile_mvp.pdf](./docs/wireframes/mobile_mvp.pdf)
+- [t3a2-a/docs/wireframes/tablet_mvp.pdf](./docs/wireframes/tablet_mvp.pdf)
+- [t3a2-a/docs/wireframes/desktop_mvp.pdf](./docs/wireframes/desktop_mvp.pdf)
+
+To view pdfs directly in VSCode you can use the following extension:
+[tomoki1207.pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
 ### Mobile
 ### Tablet
@@ -208,7 +224,7 @@ We have daily meetings that at the very least review our progress for the day, a
 
 Every task that comes to mind that might need doing goes into the ‘Backlog’ column of our Kanban board on Trello. At the Backlog stage, additional details surrounding due dates, team member allocation and complexity are (unless obvious) not included. This stage is simply to ensure that a given task is not neglected down the track. It is important to note that a given task may or may not actually get done - wishlist features for example also go into the Backlog column.
 
-From the Backlog column, we move any tasks that need doing as a priority to the ‘To Do’ column. It is at this stage that supplementary details are added including those mentioned above, and checklists. If a task’s complexity estimate is deemed to be ‘too large’ (this is a flexible definition depending on many factors, but usually not above a 5 or an 8) then this card is broken down into smaller tasks.
+From the Backlog column, we move any tasks that need doing as a priority to the ‘To Do’ column. It is at this stage that supplementary details are added including those mentioned above, and checklists. The task's complexity is assigned to be one of the fibonacci numbers to facilitate easier estimation (frequently used in Agile - see <https://www.lucidchart.com/blog/fibonacci-scale-for-agile-estimation> for more detail). If a task’s complexity estimate is deemed to be ‘too large’ (this is a flexible definition depending on many factors, but usually not above a 5 or an 8) then this card is broken down into smaller tasks.
 
 Once we are working on a task, it moves to the ‘Doing’ column. Each person only has 1-2 tasks in progress at a time - in line with general Kanban principles - which aims to increase the rate of ‘flow’ (the speed with which tasks get done). Having a set task limit helps because in addition to our individual tasks, we need to review the other team member’s work.
 
@@ -219,6 +235,22 @@ Items are moved to the ‘Code Review’ column, when they are completed by the 
 The ‘Test’ column is for code that has been written and reviewed, but needs to have testing implemented.
 
 Once reviewed (and if relevant, tested), cards are moved to the ‘Complete’ column.
+
+## Source Control Methodology
+
+We have decided to use branching rather than forking to manage our repositories collaboratively. We considered using forking, however this was discounted as for a team of two working closely, and in constant communication it was deemed to not provide any additional features that are useful to us in this context. The main benefit of forking as we see it is that the main repository has a single person/administrator having final say / control over what code is included/merged in. For us this is clearly unnecessary as the people contributing to the project is necessarily limited to just us 2, and so we do not need to further control who can submit PRs and merge. In addition, forking would mean managing 2 copies of each repository which is more work, and would require branches to develop features anyway, so also does not save time in any aspect either.
+
+We also are required by the assignment specifications to keep branch history intact (i.e. we cannot delete branches). Therefore, we have decided to make a new branch for each edit (even if it is related to the same task/feature), e.g. wireframes/edit_1, wireframes/edit_2 etc. so as to avoid merge conflicts.
+
+We have considered a rebasing solution in order to mitigate the number of branches, however as at the time of writing we have not yet managed to find a working solution that solves both of these problems.
+
+Our end to end process therefore, is as follows:
+
+- Create a new, uniquely named branch to work on a new feature, or even a new edit of an existing branch (e.g. each time we edit the readme is a new, distinct branch 'readme/edit_1', 'readme/edit_2' etc.)
+- Work, commit, push
+- Pull request to merge into main
+- Other team member checks the work, and if approved, merges the pull request into main
+- Repeat
 
 ### Trello screenshots
 
