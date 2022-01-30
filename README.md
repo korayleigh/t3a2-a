@@ -358,36 +358,36 @@ Please note that due to a script blocking browser add-on, some of the screenshot
 
 #### 22nd January 2022<!-- omit in toc -->
 
-![Trello screenshot - 22nd January 2022](docs/trello_screenshots/Screenshot%202022-01-22%20at%2012-08-38%20Full%20Stack%20App%20Trello.png)
+![Trello screenshot - 22nd January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-22.png)
 
 #### 23rd January 2022<!-- omit in toc -->
 
-![Trello screenshot - 23rd January 2022](docs/trello_screenshots/Screenshot%202022-01-23%20at%2013-30-52%20Full%20Stack%20App%20Trello.png)
+![Trello screenshot - 23rd January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-23.png)
 
 #### 24th January 2022<!-- omit in toc -->
 
-![Trello screenshot - 24th January 2022](docs/trello_screenshots/Screenshot%202022-01-24%20at%2018-38-16%20Full%20Stack%20App%20Trello.png)
+![Trello screenshot - 24th January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-24.png)
 
 #### 25th January 2022<!-- omit in toc -->
 
-![Trello screenshot - 25th January 2022](docs/trello_screenshots/Screenshot%202022-01-25%20at%2022-43-45%20Full%20Stack%20App%20Trello.png)
+![Trello screenshot - 25th January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-25.png)
 
 #### 26th January 2022<!-- omit in toc -->
 
-![Trello screenshot - 26th January 2022](docs/trello_screenshots/Screenshot%202022-01-26%20at%2020-52-03%20Full%20Stack%20App%20Trello.png)
+![Trello screenshot - 26th January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-26.png)
 
 #### 27th January 2022<!-- omit in toc -->
 
-![Trello screenshot - 27th January 2022](docs/trello_screenshots/Screenshot%202022-01-28%20at%2015-22-00%20Full%20Stack%20App%20Trello_substitute%20for%202022-01-27%20evening%20(missing).png)
+![Trello screenshot - 27th January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-27.png)
 
 #### 28th January 2022<!-- omit in toc -->
 
-![Trello screenshot - 28th January 2022](docs/trello_screenshots/Screenshot%202022-01-29%20at%2010-07-34%20Full%20Stack%20App%20Trello%20substitute%20for%202022-01-28%20evening%20(missing).png)
+![Trello screenshot - 28th January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-28.png)
 
 #### 29th January 2022<!-- omit in toc -->
 
-![Trello screenshot - 29th January 2022](docs/trello_screenshots/Screenshot%202022-01-30%20at%2010-52-44%20Full%20Stack%20App%20Trello%20substitue%20for%202022-01-29%20evening%20(missing).png)
+![Trello screenshot - 29th January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-29.png)
 
 #### 30th January 2022<!-- omit in toc -->
 
-![Trello screenshot - 30th January 2022]()
+![Trello screenshot - 30th January 2022](docs/trello_screenshots/Trello_screenshot_2022-01-30.png)
