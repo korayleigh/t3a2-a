@@ -415,3 +415,4 @@ Below are daily screenshots from our Trello board.
 - [Meeting Minutes - 27/1/22](./docs/meeting_minutes/Meeting%2004%20-%2027%20Jan%2022.md)
 - [Meeting Minutes - 28/1/22](./docs/meeting_minutes/Meeting%2005%20-%2028%20Jan%2022.md)
 - [Meeting Minutes - 29/1/22](./docs/meeting_minutes/Meeting%2006%20-%2029%20Jan%2022.md)
+- [Meeting Minutes - 30/1/22](./docs/meeting_minutes/Meeting%2007%20-%2030%20Jan%2022.md)
