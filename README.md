@@ -4,6 +4,7 @@ This repository contains documentation for a web application project which is to
 
 This repository contains documentation only; the source code for the [back end is here](https://github.com/korayleigh/t3a2-b-backend), and the [front end is here](https://github.com/korayleigh/t3a2-b-frontend)
 
+---
 ## Purpose
 
 Our web application is designed to replace manual pen and paper processes for browsing the restaurant menu, and placing an order.  It was conceived for use by customers when seated in the restaurant, however it can also provide for take-away orders.
@@ -12,6 +13,7 @@ Customers will be able to browse the restaurant menu on their own smart device w
 
 The web application will also replace other processes in the restaurant relating to orders, such as as notifying the kitchen of pending dishes, and the customer service and other functions performed by the manager.  The web application will provide interfaces for different types of users to enable them to see the order information most relevant to them, and interact with it according to their role.
 
+---
 ## Functionality / Features
 
 The below features are grouped according to the anticipated roles of users of the web application, and constitute the agreed minimum viable product (MVP) of the web application.
@@ -71,6 +73,7 @@ While not included in the MVP, the following are some additional features that m
 - Promotions, targeted discounts for loyal customers, and integration of promotion codes etc. into the order process.
 - Business monitoring and decision-making tools, including sales summaries over various periods, and statistics such as the relative popularity of dishes.
 
+---
 ## Target Audience
 
 The target audience for this web application is both customers and employees of the restaurant.
@@ -81,56 +84,90 @@ Actual customers may include both those that are dining in the restaurant, or th
 
 The employees of the restaurant include various users assigned different roles in the running of the business.  They include wait staff, kitchen staff, and managers, however in the current pen and paper process, the lines that delineate these roles can be somewhat fuzzy.  For example a kitchen staff member could also perform waiting duties, and a manager could perform any function.
 
-
+---
 ## Tech Stack
 
 The following technology is planned for use in the development, deployment and maintenance of the web application.
 
 ### Front-end
 
-Supported browsers:
-  ---
+#### Supported browsers:
   ||Google Chrome|Mozilla Firefox|Apple Safari|
-  |---|---|---|---|
-  |Mobile: iOS|v1.0|v2.0|v3.0|
-  |Mobile: Android||||
-  |Desktop: macOS||||
-  |Desktop: Windows||||
+  |---:|:---:|:---:|:---:|
+  |Version|97.0|96.0|15.3|
 
+#### ECMAScript
 
-JavaScript / ECMAScript version?
-React version:
-Key React dependencies: react-router-dom, styled-components, axios, 
+**version:** ECMAScript 2020 (ES11)
+#### React
+
+**version:** 17.0.2
+
+**Key React Dependencies**:
+|Dependency|Version|
+|---|---|
+|react-scripts|v5.0.0|
+|react-router|v6.2.1|
+|styled-components|v0.1.0|
+|axios|0.25.0|
+
+#### Hosting
+
+Netlify
 
 ### Back-end
 
-Hosting: Heroku
-Rails version: 
-Ruby version?
-Key dependencies: devise, devise-jwt, aws-sdk-s3, cors (stripe?)
+#### Hosting
+
+Heroku
+
+#### Ruby on Rails
+
+**Rails version:** 7.0.1
+**Ruby version:** 2.7.4
+
+**Key Rails Dependencies**:
+|Dependency|Version|
+|---|---|
+|devise|4.8.1|
+|devise-jwt|0.9.0|
+|aws-sdk-s3|1.111.3|
+|cors|1.0.1|
+
 
 ### Database
 
-Hosting:
-PostgreSQL version:
+#### Hosting
+Heroku
+
+#### Database type and version
+PostgreSQL v14.1
 
 ### Development tools
 
-VS Code, git 
+- VS Code v1.63
+- git v2.30
 
+---
 ## Dataflow Diagram
 
 ### Menu, Orders and Users
 
 Note: Payments feature is not included in MVP and is shown here for illustrative purposes only. Online payment is planned for a future version
 
-![Dataflow Diagram - Menu, Orders, Users](link)
+![Dataflow Diagram - Menu, Orders, Users](docs/dataflow_diagram/dataflow_diagram_menu_and_orders_and_payment_and_users.drawio.png)
+[Click here for full image](https://github.com/korayleigh/t3a2-a/blob/main/docs/dataflow_diagram/dataflow_diagram_menu_and_orders_and_payment_and_users.drawio.png)
 
+---
 ## Application Architecture Diagram
 
-![Application Architecture Diagram](link)
+![Application Architecture Diagram](docs/application_architecture_diagram/application_architecture_diagram.drawio.png)
+[Click here for full image](https://github.com/korayleigh/t3a2-a/blob/main/docs/application_architecture_diagram/application_architecture_diagram.drawio.png)
 
+---
 ## User Stories
+
+The following user stories describe the intended features of the web application.
 
 ### Menu
 
@@ -152,13 +189,14 @@ Note: Payments feature is not included in MVP and is shown here for illustrative
 
 - As the owner and administrator of the website, I want to be able to restrict access to staff-only features (such as the orders dashboard), so that general users of the site will not be able to access these functions.
 
+---
 ## Wireframes
 
 ### Mobile
 ### Tablet
 ### Desktop
 
-## Trello screenshots
+---
 
 ## Planning Methodology
 
@@ -181,3 +219,37 @@ Items are moved to the ‘Code Review’ column, when they are completed by the 
 The ‘Test’ column is for code that has been written and reviewed, but needs to have testing implemented.
 
 Once reviewed (and if relevant, tested), cards are moved to the ‘Complete’ column.
+
+### Trello screenshots
+
+#### 23rd January 2022
+
+![Trello screenshot - 23rd January 2022]()
+
+#### 24th January 2022
+
+![Trello screenshot - 23rd January 2022]()
+
+#### 25th January 2022
+
+![Trello screenshot - 23rd January 2022]()
+
+#### 26th January 2022
+
+![Trello screenshot - 23rd January 2022]()
+
+#### 27th January 2022
+
+![Trello screenshot - 23rd January 2022]()
+
+#### 28th January 2022
+
+![Trello screenshot - 23rd January 2022]()
+
+#### 29th January 2022
+
+![Trello screenshot - 23rd January 2022]()
+
+#### 30th January 2022
+
+![Trello screenshot - 23rd January 2022]()
