@@ -13,7 +13,6 @@
 - Koray will update planning methodology to include extra user stories, source code management, links to minutes of meetings, and mention Fibonacci estimation method.
 - Leigh will begin to design an Entity Relationship Diagram in preparation for Part B
 - In preparation for Part B, Leigh will ensure he is using the same ruby version as Koray (2.7.4) and the same rails version (6.1.4.4)
-- 
 
 ## 3. Blockers
 - None
